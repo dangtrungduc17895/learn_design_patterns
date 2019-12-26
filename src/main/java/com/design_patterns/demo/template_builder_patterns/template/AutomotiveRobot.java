@@ -1,4 +1,4 @@
-package com.design_patterns.demo.template_builder_patterns;
+package com.design_patterns.demo.template_builder_patterns.template;
 
 /**
  * @author DucDT

@@ -1,4 +1,4 @@
-package com.design_patterns.demo.template_builder_patterns;
+package com.design_patterns.demo.template_builder_patterns.template;
 
 /**
  * @author DucDT
@@ -9,7 +9,9 @@ public abstract class RobotTemplate {
         start();
         getParts();
         assemble();
-        test();
+        if (testOk()) {
+            test();
+        }
         stop();
     }
 
@@ -18,18 +20,22 @@ public abstract class RobotTemplate {
     }
 
     public void getParts() {
-        System.out.println("Getting a carburetor...");
+        System.out.println("Gettingr...");
     }
 
     public void assemble() {
-        System.out.println("Installing the carburetor...");
+        System.out.println("Installing...");
     }
 
     public void test() {
-        System.out.println("Revving the engine...");
+        System.out.println("Revving ...");
     }
 
     public void stop() {
         System.out.println("Stopping...");
+    }
+
+    public boolean testOk() {
+        return true;
     }
 }
